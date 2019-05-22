@@ -1,0 +1,10 @@
+header, section,footer {
+    width: 100%;
+    border: 1px orangered solid;
+    background-color: darkgray;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+}
