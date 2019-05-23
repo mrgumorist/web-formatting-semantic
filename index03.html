@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="css/index03.css">
+    <style>
+        /* selector by tag name */
+        body,
+        html {
+            background-color: dimgrey;
+        }
+
+        /*selector by Id*/
+        #super-button {
+            width: 50px;
+        }
+
+        input.simple-style {
+            color: aqua;
+        }
+
+        div > ul li.third#smth {
+            background-color: brown;
+            font-size: 20px;
+        }
+
+
+        /* div + ul li  {
+            font-size: 10px;
+        } */
+
+        button ~ ul {
+            font-size: 50px;
+            color: red;
+        }
+
+        ul *{
+            margin: 0;
+        }
+
+
+        input[name]{
+            color: red;
+        }
+
+        a[href]{
+            background-color: red;
+        }
+        a[href^='https']{
+            background-color:green 
+        }
+        a[href='https://www.radioroks.ua/']{
+            background-color: orange;
+        }
+
+        a[href$='ua/']{
+            color: red;
+        }
+
+        a[href*='habr']{
+            color: white;
+        }
+
+        a:hover{
+            font-size: 200%;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        p[data-caption~="bla"]{
+            color: orchid;
+        }
+
+        p + ul {
+            background-color: whitesmoke;
+        }
+
+        p + ul li:first-child{
+            color: blue;
+        }
+
+        p + ul li:first-child::first-letter{
+            color:orangered;
+        }
+
+        ul + ul li:nth-child(odd) {
+            color:yellow;
+        }
+
+        ul + ul li:nth-child(even) {
+            color:blue;
+        }
+
+        ul + ul li:not(:out-of-range(5,8)) {
+            color:purple;
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <button id="super-button">Click me!</button>
+    <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+    </ul>
+    <button class="simple-style">Click me!</button>
+    <input name="blabla"  type="text" placeholder="enter something"  />
+    <input type="text" placeholder="enter something"  />
+    <input name="blabla"  type="text" placeholder="enter something"  />
+    <div>
+        <ol>
+            <li>
+                <div>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li class="third">3</li>
+                        <li class="third" id="smth">4</li>
+                        <li>5</li>
+                    </ul>
+                </div>
+            </li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+    <div>
+        <ol>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ol>
+    </div>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+
+    <a href="https://habr.com/ru/">Habroid</a>
+    <a href="https://arduino.ua/">Arduino.ua</a>
+    <a href="https://www.arduino.cc/">Arduino.cc</a>
+    <a href="http://multidoc.oflameron.com/page3.htm">Halava referats</a>
+    <a href="https://www.radioroks.ua/">Radio ROKS</a>
+    <p data-caption="bla bla text" data-budka="dyatel" >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus reprehenderit eos dignissimos quam cupiditate, voluptatibus quidem quod ipsum placeat nobis unde sapiente suscipit, rem deleniti atque pariatur illum beatae? Voluptatum optio aspernatur rem quia possimus provident molestiae harum vel dolorem ad veniam, voluptate vero deleniti at soluta consequatur a. Officiis est saepe non beatae. Id repudiandae nulla qui deserunt dolor.
+
+    </p>
+    <p data-caption="blabla text" >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus reprehenderit eos dignissimos quam cupiditate, voluptatibus quidem quod ipsum placeat nobis unde sapiente suscipit, rem deleniti atque pariatur illum beatae? Voluptatum optio aspernatur rem quia possimus provident molestiae harum vel dolorem ad veniam, voluptate vero deleniti at soluta consequatur a. Officiis est saepe non beatae. Id repudiandae nulla qui deserunt dolor.
+    
+    </p>
+    <ul>
+            <li>111111</li>
+            <li>222222</li>
+            <li>333333</li>
+            <li>4</li>
+            <li>5</li>
+    </ul>
+    <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+    </ul>
+
+
+
+
+</body>
+
+</html>
