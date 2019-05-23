@@ -1,0 +1,100 @@
+#first{
+    background-color: blue;
+}
+
+.first{
+    background-color: green;
+}
+
+button{
+    background-color: red;
+}
+
+*{
+    margin: 0;
+}
+
+html,body{
+    background-color: whitesmoke;
+}
+
+div > ul {
+    background-color: chartreuse;
+}
+
+li ul li.container#def{
+    background-color: red;
+}
+
+/* + ~ */
+div + div{
+    font-size: 20px;
+}
+
+div ~ div{
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+a{
+    background-color: rgb(238, 122, 122);
+    font-size: 300%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a[href^="https"]{
+    background-color:green;
+}
+a[href="https://www.radioroks.ua/"]{
+    background-color: orange;
+}
+
+p[data-caption]{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p[data-caption*="useless"]{
+    background-color: black;
+}
+p[data-caption~="useless"]{
+    background-color: black;
+}
+
+p+ul{
+    font-size: 200%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* p+ul li:not(:first-child) */
+/* 
+p+ul li:nth-child(odd){
+    background-color: blue;
+}
+p+ul li:nth-child(even){
+    background-color: yellow;
+} */
+
+p+ul li:nth-child(n+3):nth-child(-n+11){
+    background-color: yellow;
+}
+
+p:nth-of-type(2)::first-letter{
+    color: red;
+    font-size: 400%;
+}
+
+a:hover{
+    color: red;
+    font-size: 600%;
+}
+
+a:visited{}
+
+input:checked{
+
+}
+
+
+
+
+
